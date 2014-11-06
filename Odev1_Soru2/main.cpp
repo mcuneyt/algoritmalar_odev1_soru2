@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h> // tip dönüşümleri için ekledim...
-#include <ctype.h> // girilen değerin sayısal mı harf mi olduğunu kontrol etmek için ekledim...
+#include <stdlib.h> // tip dÃ¶nÃ¼ÅŸÃ¼mleri iÃ§in...
+#include <ctype.h> // girilen deÄŸerin sayÄ±sal mÄ± harf mi olduÄŸunu kontrol etmek iÃ§in...
 
 void main ()
 {
@@ -35,17 +35,17 @@ void main ()
 	}
 	while (basamakSayisi != 4);
 
-	// Basamak sayısı sabit olarak verildiğinden aşağıdaki matematiksel çözümü tercih ettim.
+	// Basamak sayÄ±sÄ± sabit olarak verildiÄŸinden aÅŸaÄŸÄ±daki matematiksel Ã§Ã¶zÃ¼mÃ¼ tercih ettim.
 
-	// Binler basamağı
+	// Binler basamaÄŸÄ±
 	binlerBasamagi = cozumlenecekSayi/1000;
-	// Yüzler basamağı
+	// YÃ¼zler basamaÄŸÄ±
 	cozumlenecekSayi = cozumlenecekSayi - (binlerBasamagi * 1000);
 	yuzlerBasamagi = cozumlenecekSayi/100;
-	// Onlar basamağı
+	// Onlar basamaÄŸÄ±
 	cozumlenecekSayi = cozumlenecekSayi - (yuzlerBasamagi * 100);
 	onlarBasamagi = cozumlenecekSayi/10;
-	//Birler basamağı
+	//Birler basamaÄŸÄ±
 	cozumlenecekSayi = cozumlenecekSayi - (onlarBasamagi * 10);
 	birlerBasamagi = cozumlenecekSayi;
 
